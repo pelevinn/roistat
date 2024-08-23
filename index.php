@@ -15,25 +15,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <form class="custom-form" method="POST" action="amo.php">                        
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Имя</label>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Введите ваше имя">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Введите ваш email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Телефон</label>
-                                <input type="tel" name="phone" class="form-control" id="phone" placeholder="Введите ваш телефон">
-                            </div>
-                            <div class="mb-3">
-                                <label for="price" class="form-label">Цена</label>
-                                <input type="number" name="price" class="form-control" id="price" placeholder="Введите цену">
-                            </div>
-                            <input type="hidden" id="visiting-time" name="visiting-time" value="0">
-                            <button type="submit" class="btn btn-primary float-end">Отправить</button>
-                        </form>
+                        <?php
+                        if( isset($_GET["send"]) && $_GET["send"] == "ok" ){?>
+                            <p>Форма отправлена!</p>
+                        <?php }
+                        ?>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" name="name" class="form-control" id="name" required placeholder="Введите ваше имя">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" id="email" required placeholder="Введите ваш email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" name="phone" class="form-control" id="phone" required placeholder="Введите ваш телефон">
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Цена</label>
+                            <input type="number" name="price" class="form-control" id="price" placeholder="Введите цену">
+                        </div>
+                        <input type="hidden" id="visiting-time" name="visiting-time" required value="0">
+                        <button type="submit" class="btn btn-primary float-end">Отправить</button>
+                    </form>
                 </div>
             </div>
         </div>

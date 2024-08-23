@@ -106,6 +106,7 @@ curl_close($curl);
 
 if ($httpcode === 200 || $httpcode === 201) {
     echo "Лид успешно создан!";
+    header("Location: /?send=ok");
 } else {
     echo "Ошибка при создании лида: " . $response;
 }
