@@ -1,0 +1,28 @@
+body{
+    background-color: #e5e5e5;
+}
+main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.custom-form{
+    max-width: 700px;
+    margin: -200px auto 0;
+    background-color: #f8f9fa;
+    padding: 50px 50px 90px 50px;
+    border-radius: 8px;
+}
+.custom-form button{
+    background: grey;
+    border: 1px solid grey;
+    font-weight: bold;
+    color: white;
+    transition: .3s ease-in-out;
+}
+.custom-form button:hover{
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+}
+    
