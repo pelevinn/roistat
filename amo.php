@@ -1,37 +1,6 @@
 <?php
 $subdomain = "89265444561";
-$accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQzN2MyYTM3YmE5Yzc2NWMwMzk5MzcwMzQwOTU0Nzg4YzNlNjY5Y2VjNmJiNGUwZDVlZmU3YzQyMzRiN2EzOTI2YzE3ZjNmNjk0ODQwOTNkIn0.eyJhdWQiOiJjYmI0ZWY5NC1hMzBmLTQyMTgtYjc5Mi0xYzYwMmM5OTA3OWQiLCJqdGkiOiI0MzdjMmEzN2JhOWM3NjVjMDM5OTM3MDM0MDk1NDc4OGMzZTY2OWNlYzZiYjRlMGQ1ZWZlN2M0MjM0YjdhMzkyNmMxN2YzZjY5NDg0MDkzZCIsImlhdCI6MTcyNDM2NzM4NywibmJmIjoxNzI0MzY3Mzg3LCJleHAiOjE3MjQ0NTM3ODcsInN1YiI6IjExNDIzODg2IiwiZ3JhbnRfdHlwZSI6IiIsImFjY291bnRfaWQiOjMxOTA5NDkwLCJiYXNlX2RvbWFpbiI6ImFtb2NybS5ydSIsInZlcnNpb24iOjIsInNjb3BlcyI6WyJwdXNoX25vdGlmaWNhdGlvbnMiLCJmaWxlcyIsImNybSIsImZpbGVzX2RlbGV0ZSIsIm5vdGlmaWNhdGlvbnMiXSwiaGFzaF91dWlkIjoiZmZkYWYxZTItZjYyYS00MzQ3LWE3MzktYjdlMTM1N2Y5NmU0IiwiYXBpX2RvbWFpbiI6ImFwaS1iLmFtb2NybS5ydSJ9.Z2g1VUHZnAS7yoBKuFyjOLqee-zhLbjmR17bh2KWKaxzyzoPPncKETyegxYWlXHpD1hPM7N6Jlt-RawMs3hYgiHhLW272eVRC2de6KjWrzW-Uy-EVMPkkQl36e0qj9ghJZp1mjAbzK1Xrk7A5h0EYKYu0eP3VJqQS3wSYxj752gtCtE0RkTtbWhpZhqtHw-swzOEMZNBmQuEQIM_We6JmnfDqkWMxVX1RF0EtiOfeY8kJi0qXkkX_b7amO-uT-jqM_LnZoAYpwa2BZqLmTpiXwFzDZQtzFDWpiPyjQ990hUdoO5kIJ6g1harLmuKdhpkYQ7v0TEFNn6x_m-9-SXyNQ';
-
-$leadData = [
-    [
-            "contacts" => [
-                [
-                    "name" => $name,
-                    "custom_fields_values" => [
-                        [
-                            "field_code" => "email",
-                            "values" => [
-                                [
-                                    "enum_code" => "WORK",
-                                    "value" => $email
-                                ]
-                            ]
-                        ],
-                        [
-                            "field_code" => "phone",
-                            "values" => [
-                                [
-                                    "enum_code" => "WORK",
-                                    "value" => $phone
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-
-        ]      
-];
+$accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjZiNGNmOTA0ZGEwNjZkY2NjYTMxZjc1NDliNDg4ZWE5ZDJhYTZkMjgwN2YwN2Q4ZDY0Y2M1ZWJmNzEzYTIzYzY2ZGJiMGIyOWU5NmE3YzI1In0.eyJhdWQiOiJjYmI0ZWY5NC1hMzBmLTQyMTgtYjc5Mi0xYzYwMmM5OTA3OWQiLCJqdGkiOiI2YjRjZjkwNGRhMDY2ZGNjY2EzMWY3NTQ5YjQ4OGVhOWQyYWE2ZDI4MDdmMDdkOGQ2NGNjNWViZjcxM2EyM2M2NmRiYjBiMjllOTZhN2MyNSIsImlhdCI6MTcyNDc1MTM2MCwibmJmIjoxNzI0NzUxMzYwLCJleHAiOjE3MjQ4Mzc3NjAsInN1YiI6IjExNDIzODg2IiwiZ3JhbnRfdHlwZSI6IiIsImFjY291bnRfaWQiOjMxOTA5NDkwLCJiYXNlX2RvbWFpbiI6ImFtb2NybS5ydSIsInZlcnNpb24iOjIsInNjb3BlcyI6WyJwdXNoX25vdGlmaWNhdGlvbnMiLCJmaWxlcyIsImNybSIsImZpbGVzX2RlbGV0ZSIsIm5vdGlmaWNhdGlvbnMiXSwiaGFzaF91dWlkIjoiNTIxMmQ5NjMtZjVjYy00ODYyLWE3NTMtMzZhODI1ZGNmNTUwIiwiYXBpX2RvbWFpbiI6ImFwaS1iLmFtb2NybS5ydSJ9.KvfPZwQlw0jDsA9xS42JUo4GVoX04MLno7C5X2TChyXMU6_taH8RSFjfXN2pt953fH7H1pEioTJC2-cMxtfGO5vlQ7mTPhc_98R1ObGmQl980xEOhgZ90zPd9DHb3qQi0Noa4oO4UOEEF2VkiVkWMZv2CImVli9meaY9JyOZRydDJPG1Q_iCI209udrd4nLioKcUY9NQVATckARM5xOqV7m5QX6_teyCW4iKfGvNlrzDZAwfFTv2cKBAXjZTgtUvt4uPdSIw4lwcite2-uFJ4gyCqt8Y99zbGuskBAmjoekrAyBJ1kRBd949ZgfZ4cy4xbVtRae0Hh269QU6vh7TBw';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -105,9 +74,9 @@ $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 curl_close($curl);
 
 if ($httpcode === 200 || $httpcode === 201) {
-    echo "Лид успешно создан!";
+    echo "Форма успешно отправлена!";
     header("Location: /?send=ok");
 } else {
-    echo "Ошибка при создании лида: " . $response;
+    echo "Ошибка отправки формы: " . $response;
 }
 ?>
